@@ -1,0 +1,11 @@
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    {{range .Site.Sections }}
+    <li><a href="{{.RelPermalink}}">{{- .Title -}}</a></li>
+    {{end}}
+    {{range (where .Site.RegularPages.ByTitle "Section" "" )}}
+    <li><a href="{{.RelPermalink}}">{{- .Title -}}</a></li>
+    {{end}}
+  </ul>
+</nav>
