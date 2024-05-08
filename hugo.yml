@@ -1,0 +1,6 @@
+baseURL: 'https://three-elephants.dev/'
+languageCode: 'en-us'
+title: 'Three Elephants Game Studio'
+theme: 'huguette'
+params:
+  css: true
