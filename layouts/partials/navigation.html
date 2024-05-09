@@ -1,6 +1,6 @@
 <nav>
   <ul>
-    <li><a href="/">Home</a></li>
+	<li><a href="{{ absURL "" }}">Home</a></li>
     {{range .Site.Sections }}
     <li><a href="{{.RelPermalink}}">{{- .Title -}}</a></li>
     {{end}}
